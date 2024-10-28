@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(musicbg.png);
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  height: 100px;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color:palevioletred;
+  justify-content: space-between;
+  text-align: center;
+  color: rgb(9, 9, 9);
+ 
+}
+.logo{
+  mix-blend-mode: luminosity;
+}
+img{
+  
+  height: 70px;
+ object-fit: cover;
+}
+.item{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color:aqua;
+
+}
+.h1:hover{
+  background-color: lightcoral;
+  
+}
+.h2:hover{
+   background-color: lightcoral;
+   
+}
+.h3:hover{
+   background-color:lightcoral;
+   
+} 
+.h4:hover{
+   background-color: lightcoral;
+   
+}
+.h5:hover{
+   background-color: lightcoral;
+   
+}
+#checkbox{
+  display: none;
+  
+}
+.icon{
+  width: 100%;
+  mix-blend-mode: difference;
+  display: none;
+}
+@media screen and (max-width: 645px){
+  .item{
+    display: none;
+  }
+  .icon{
+    display: block;
+  
+}
+}
+#checkbox:checked+.item{
+  transform: scale(1.0);
+  display: block;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+ right: 70px;
+ top: 70px;
+  
+}
+@media screen and (min-width:500px) {
+  .icon{
+    display: none;
+  }
+  
+}
